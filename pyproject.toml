@@ -1,0 +1,18 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "wordle-es-solver"
+version = "1.0.0"
+description = "Spanish Wordle solver"
+requires-python = ">=3.8"
+
+[project.scripts]
+wordle = "wordle:main"
+
+[tool.hatch.build.targets.wheel]
+packages = ["."]
+
+[tool.uv]
+dev-dependencies = []
